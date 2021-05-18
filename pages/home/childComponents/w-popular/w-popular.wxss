@@ -1,0 +1,7 @@
+.popular{
+  width: 100%;
+  height: 550rpx;
+}
+.popular > image {
+  width: 100%;
+}

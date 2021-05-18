@@ -1,2 +1,23 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- 首页轮播图 -->
+<w-swiper list="{{banners}}"/>
+
+<!-- 推荐栏 -->
+<!-- 
+  这里的bind:imageload="handleImageLoad"是为了监听到w-tab-control组件的正确位置，
+  当推荐栏里的图片加载完是发出handleImageLoad事件，这时可以监听到正确的位置，
+  当然由于我有给各个组件设置有height，所以可以直接在onShow中获取位置，避免这个步骤
+-->
+<w-recommend  recommends="{{recommends}}" bind:imageload="handleImageLoad"/>
+
+<!-- 展示本周流行 -->
+<w-popular />
+
+<!-- tabControl(流行、新款、精选) -->
+<w-tab-control id="tab-control" titles="{{titles}}" bind:tabClick="handleTabClick" class="{{ isTabFixed ? 'fixed' : ''}}"/>
+<w-tab-control titles="{{titles}}" class="{{isTabFixed ? '' : 'hidden'}}"/>
+
+<!-- 商品展示 -->
+<w-goods-list goods="{{goods[currentType].list}}"/>
+
+<!-- 回到顶部的backTop -->
+<w-back-top class="{{isShow ? '' : 'hidden'}}"/>

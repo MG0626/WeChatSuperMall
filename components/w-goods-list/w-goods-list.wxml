@@ -1,0 +1,20 @@
+<view class="goods-list">
+  <block wx:for="{{goods}}" wx:key="iid">
+    <view class="goods-list-item">
+      <image src="{{item.show.img}}" mode="widthFix"/>
+      <view class="desc-info">
+        <view class="title">{{item.title}}</view>
+        <view class="info">
+          <view>
+            <text class="price">￥{{item.price}}</text>
+            <text class="org-price">{{item.orgPrice}}</text>
+          </view>
+          <view class="cfav">
+            <image src="/assets/images/common/favor.png" mode="widthFix"/>
+            <text>{{item.cfav}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

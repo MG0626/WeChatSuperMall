@@ -1,0 +1,55 @@
+.goods-list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.goods-list .goods-list-item{
+  width: 45%;
+  padding: 10rpx 0;
+}
+
+.goods-list-item > image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.goods-list-item .desc-info{
+  
+}
+
+.desc-info .title{
+  width: 100%;
+  font-size: 30rpx;
+  /* 多行文本溢出隐藏 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /*对齐模式，纵向对齐*/
+  -webkit-line-clamp: 2; /*用来限制在一个块元素显示的文本的行数*/
+}
+
+.desc-info .info{
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.info .org-price{
+  font-size: 24rpx;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.info .price{
+  color: red
+}
+
+.info .cfav{
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+.info .cfav > image{
+  width: 28rpx;
+}

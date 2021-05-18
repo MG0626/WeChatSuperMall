@@ -1,0 +1,23 @@
+/* components/w-recommend/w-recommend.wxss */
+.recommends{
+  width: 750rpx;
+  height: 230rpx;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 16rpx solid #eee;
+  box-sizing: border-box;
+}
+.recommends .recommend-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recommend-item > image{
+  width: 140rpx;
+}
+.recommend-item > text{
+  font-size: 28rpx;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+}

@@ -6,13 +6,10 @@
     "pages/profile/profile"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#FF5777",
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
-    "color": "#515151",
     "selectedColor": "#FF5777",
     "position": "bottom",
     "borderStyle": "black",
